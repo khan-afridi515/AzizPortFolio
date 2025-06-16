@@ -35,7 +35,7 @@ const Nav = () => {
             </ul>
         </div>
         <div>
-            <button className=' border py-2 px-4 bg-blue-500 text-white rounded-md md:block hidden'>Contact with me</button>
+            <button className=' border py-2 px-4 bg-blue-500 text-white rounded-full md:block hidden'>Contact with me</button>
         </div>
 
         <div className='flex gap-4 items-center md:hidden block'>
