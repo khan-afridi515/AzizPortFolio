@@ -23,6 +23,7 @@ const AboutMe = () => {
             <p>
                 So, now I can work in Front End development Project, with HTML, Css, Java Script, React js and TailwinCss.
             </p>
+            
         </div>
       </div>
     </div>

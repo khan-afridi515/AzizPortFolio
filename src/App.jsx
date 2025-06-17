@@ -2,6 +2,9 @@ import React from 'react'
 import Nav from './navbar/nav'
 import Hero from './hero/hero'
 import AboutMe from './About/AboutMe'
+import Skill from './Skills/skill'
+import Train from './Training/Train'
+
 
 const App = () => {
   return (
@@ -9,6 +12,8 @@ const App = () => {
       <Nav/>
       <Hero/>
       <AboutMe/>
+      <Train/>
+      <Skill/>
       <p className='text-red-500'>This is my portfolio website</p>
     </div>
   )
