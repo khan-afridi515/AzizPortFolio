@@ -25,7 +25,7 @@ const Nav = () => {
              <h1 className='text-2xl font-bold text-white'>Aziz Ullah</h1>
         </div>
         <div className='md:block hidden'>
-            <ul className='flex lg:gap-5 gap-3 justify-center items-center mt-2 text-white font-bold'>
+            <ul className='flex lg:gap-5 gap-3 justify-center items-center mt-2 text-white font-bold text-xl'>
                 <li className='hover:text-xl hover:text-pink-500 hover:font-bold transition duration-400 ease-in-out'>Home</li>
                 <li>About</li>
                 <li>Education</li>

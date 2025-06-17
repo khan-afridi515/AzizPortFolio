@@ -5,11 +5,11 @@ const AboutMe = () => {
     <div className='py-14 px-16 bg-black'>
 
        <h1 className='text-center text-white text-3xl font-bold'>About Me</h1>
-      <div className='flex gap-10 w-[100%] py-10'>
-        <div className='w-[30%]'>
+      <div className='flex md:flex-row flex-col md:justify-start justify-center md:items-start items-center gap-10 w-[100%] py-10'>
+        <div className='md:w-[30%] w-[70%]'>
             <img src="images/Aziz.jpg" className='w-full'></img>
         </div>
-        <div className='w-[70%] text-white'>
+        <div className='md:w-[70%] w-[90%] text-white'>
             <p>
                 My name is Aziz Ullah, I have done matric education from GHS Hashim Abad Jamrud Distric Khyber with good marks.
                 I got addmission in Islamia collage Peshawer for Fsc, where I succefully passed my Fsc exame with good marks in 2019.
