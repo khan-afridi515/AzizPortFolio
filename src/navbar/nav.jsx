@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <div>
-      <div className='flex justify-between px-8 py-4 bg-black'>
+      <div className='flex justify-between px-16 py-4 bg-black'>
         <div className='mt-2'>
              <h1 className='text-2xl font-bold text-white'>Aziz Ullah</h1>
         </div>
