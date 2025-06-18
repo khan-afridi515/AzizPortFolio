@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Services = () => {
+import {Link} from 'react-router-dom';
+const Services = ({sendData}) => {
     const work = [
         {
             name : "Web Development",
@@ -30,7 +30,7 @@ const Services = () => {
                         <h3 className='text-white text-xl font-bold'>0{index+1}</h3>
                         <h1 className='text-2xl font-bold text-pink-500 '>{service.name}</h1>
                         <p className='text-white overflow-hidden'>{service.details}</p>
-                        <p className='pt-4 text-pink-500'>Read More</p>
+                        <Link to="service"><p className='pt-4 text-pink-500' onClick={()=>sendData(service, index)}>Read More</p></Link>
                     </div>
                 )
             })
