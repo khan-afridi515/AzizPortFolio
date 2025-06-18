@@ -5,6 +5,7 @@ import AboutMe from './About/AboutMe'
 import Skill from './Skills/skill'
 import Train from './Training/Train'
 import Services from './service/services'
+import Project from './Project/projects'
 
 
 const Port = ({sendItem}) => {
@@ -16,6 +17,7 @@ const Port = ({sendItem}) => {
       <Train/>
       <Skill/>
       <Services sendData={sendItem}/>
+      <Project/>
     </div>
   )
 }

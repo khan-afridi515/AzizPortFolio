@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div className='py-14 px-16 bg-black'>
 
-       <h1 className='text-center text-white text-3xl font-bold'>About Me</h1>
+       <h1 className='text-center text-white text-3xl font-bold'>About me</h1>
       <div className='flex md:flex-row flex-col md:justify-start justify-center md:items-start items-center gap-10 w-[100%] py-10'>
         <div className='md:w-[30%] w-[70%]'>
             <img src="images/Aziz.jpg" className='w-full'></img>
@@ -23,6 +23,8 @@ const AboutMe = () => {
             <p>
                 So, now I can work in Front End development Project, with HTML, Css, Java Script, React js and TailwinCss.
             </p>
+
+            
             
         </div>
       </div>

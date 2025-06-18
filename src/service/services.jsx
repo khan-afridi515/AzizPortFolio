@@ -35,6 +35,7 @@ const Services = ({sendData}) => {
                 )
             })
         }
+        
       </div>
     </div>
   )

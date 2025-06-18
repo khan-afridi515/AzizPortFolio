@@ -27,7 +27,7 @@ const App = () => {
       
       </Router>
       
-      <p className='text-red-500'>This is my portfolio website</p>
+      
     </div>
   )
 }
