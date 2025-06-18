@@ -16,7 +16,7 @@ const Train = () => {
         }
     ]
   return (
-    <div className='px-16 py-20 bg-black'>
+    <div className='px-16 py-16 bg-black'>
         <h1 className='text-center text-white text-3xl font-bold'>Training and Certification</h1>
       <div className='w-full flex md:flex-row md-justify-start justify-center items-center flex-col gap-8 my-8'>
           {

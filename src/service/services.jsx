@@ -20,7 +20,7 @@ const Services = ({sendData}) => {
         }
     ]
   return (
-    <div className='w-full bg-black py-20 px-16'>
+    <div className='w-full bg-black py-16 px-16'>
         <h1 className='text-2xl font-bold text-center text-white'>My Services</h1>
       <div className='flex gap-8 flex-wrap justify-center items-center w-full py-8'>
         {
