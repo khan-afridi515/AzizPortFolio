@@ -6,6 +6,7 @@ import Skill from './Skills/skill'
 import Train from './Training/Train'
 import Services from './service/services'
 import Project from './Project/projects'
+import Contacts from './contact/contacts'
 
 
 const Port = ({sendItem}) => {
@@ -18,6 +19,7 @@ const Port = ({sendItem}) => {
       <Skill/>
       <Services sendData={sendItem}/>
       <Project/>
+      <Contacts/>
     </div>
   )
 }

@@ -22,7 +22,7 @@ const Train = () => {
           {
             element.map((item)=>{
                 return(
-                    <div className='p-4 bg-gray-600 rounded-md md:w-[50%] w-[90%] h-80 flex flex-col gap-3 text-white'>
+                    <div className='p-4 bg-gray-600 rounded-md md:w-[50%] w-[90%] min:h-80 flex flex-col gap-3 text-white'>
                         <div className='flex flex-col w-full'>
                         <h3 className='font-bold'>Course Name  </h3>
                         <h3 className=''>{item.course}</h3>

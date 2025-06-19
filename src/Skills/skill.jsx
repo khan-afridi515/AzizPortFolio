@@ -17,7 +17,7 @@ const Skill = () => {
         <h1 className='text-center text-white text-2xl font-bold'>My Skills</h1>
         <div className='py-8'>
         {skills.map((skill, index) => (
-        <div key={index} className="mb-4 w-[60%] m-auto">
+        <div key={index} className="mb-4 md:w-[60%] w-[90%] m-auto">
           <div className="flex justify-between">
             <span className="text-sm font-medium text-white">{skill.name}</span>
             <span className="text-sm text-gray-500">{skill.level}%</span>
