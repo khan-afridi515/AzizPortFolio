@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-
+import {Link} from "react-scroll"
 const Nav = () => {
 
    const bar = useRef();
@@ -38,19 +38,21 @@ const Nav = () => {
         </div> 
         <div className='md:block hidden w-full' ref={list}>
         <ul className='flex md:flex-row flex-col lg:gap-5 gap-3 justify-center items-start mt-2 text-white font-bold text-xl '>
-                <li >Home</li>
-                <li>About</li>
-                <li>Training</li>
-                <li>Skills</li>
-                <li>Services</li>
-                <li>Projects</li>
-            </ul>
+        <Link to="hero" smooth={true} duration={600} className="mr-4 cursor-pointer"><li >Home</li></Link>
+        <Link to="about" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>About</li></Link>
+        <Link to="train" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Training</li></Link>
+        <Link to="skill" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Skills</li></Link>
+        <Link to="service" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Services</li></Link>
+        <Link to="projecct" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Projects</li></Link>
+        </ul>
         </div>
            
         </div>
+        <Link to="contact" smooth={true} duration={500} className="mr-4 cursor-pointer">
         <div className='md:block hidden'>
-            <button className=' border py-2 px-4 bg-blue-500 text-white rounded-full'>Contact with me</button>
+            <button className=' border py-2 px-4 bg-blue-500 text-white rounded-full cursor-pointer'>Contact with me</button>
         </div>
+        </Link>
 
       </div>
 

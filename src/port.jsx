@@ -13,13 +13,13 @@ const Port = ({sendItem}) => {
   return (
     <div>
       <Nav/>
-      <Hero/>
-      <AboutMe/>
-      <Train/>
-      <Skill/>
-      <Services sendData={sendItem}/>
-      <Project/>
-      <Contacts/>
+      <section id="hero"><Hero/></section>
+      <section id="about"><AboutMe/></section>
+      <section id="train"><Train/></section>
+      <section id="skill"><Skill/></section>
+      <section id="service"><Services sendData={sendItem}/></section>
+      <section id="projecct"><Project/></section>
+      <section id="contact"><Contacts/></section>
     </div>
   )
 }
