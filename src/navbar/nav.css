@@ -1,0 +1,21 @@
+.navigate{
+    transition: 0.3s ease-in-out;
+}
+
+.navigate:hover{
+  transition: 0.3s ease-in-out;
+  color:pink;
+  transform: scale(1.1);
+}
+
+
+.btn{
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+  transition: 0.3s ease-in-out;
+  border:2px solid blue;
+  color:blue;
+  background-color: black;
+}
+

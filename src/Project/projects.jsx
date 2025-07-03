@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./project.css";
 const Project = () => {
 
   const items = [
@@ -58,7 +58,7 @@ const Project = () => {
         {
           items.map((app)=>{
             return(
-              <a href={app.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer'>
+              <a href={app.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project1'>
                 <img className="w-full" src={app.cover}></img>
                 <h1 className='text-xl text-red-500 font-bold mt-1'>{app.name}</h1>
               </div></a>
@@ -73,7 +73,7 @@ const Project = () => {
         {
           items2.map((web)=>{
             return(
-              <a href={web.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer'>
+              <a href={web.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project2'>
                 <img className="w-full" src={web.cover}></img>
                 <h1 className='text-xl text-red-500 font-bold mt-1'>{web.name}</h1>
               </div></a>

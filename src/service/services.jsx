@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import "./service.css";
 const Services = ({sendData}) => {
     const work = [
         {
@@ -26,7 +27,7 @@ const Services = ({sendData}) => {
         {
             work.map((service, index)=>{
                 return(
-                    <div className='border border-white py-3 px-2 flex flex-col gap-4 lg:w-[23%] md:w-[45%] w-[95%] h-60 rounded-md'>
+                    <div className='border border-white py-3 px-2 flex flex-col gap-4 lg:w-[23%] md:w-[45%] w-[95%] h-60 rounded-md service'>
                         <h3 className='text-white text-xl font-bold'>0{index+1}</h3>
                         <h1 className='text-2xl font-bold text-pink-500 '>{service.name}</h1>
                         <p className='text-white overflow-hidden'>{service.details}</p>

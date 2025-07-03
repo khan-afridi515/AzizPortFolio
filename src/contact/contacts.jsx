@@ -1,4 +1,5 @@
 import React from 'react'
+import "./contact.css";
 
 const Contacts = () => {
   return (
@@ -38,7 +39,7 @@ const Contacts = () => {
           <textarea type="text" className='w-full h-30 rounded-md py-2 px-4 border border-white outline-none bg-gray-900 text-white'></textarea>
           </div>
           <div className='flex gap-1 w-full'>
-            <button className='px-4 py-1 bg-blue-500 text-xl cursor-pointer rounded-md'>Submit</button>
+            <button className='px-4 py-1 bg-blue-500 text-xl cursor-pointer rounded-md sbmt'>Submit</button>
           </div>
       </div>
 

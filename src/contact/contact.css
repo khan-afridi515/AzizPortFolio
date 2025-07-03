@@ -1,0 +1,6 @@
+.sbmt:hover{
+ transition:0.3s ease-in-out;
+ background-color: black;
+ border:2px solid blue;
+ color:blue;
+}

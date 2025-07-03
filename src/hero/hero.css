@@ -1,0 +1,22 @@
+.cnct{
+    transition:0.3s ease-in-out;
+}
+.cnct:hover{
+    transition:0.3s ease-in-out;
+    border:2px solid pink;
+    background-color: black;
+    color:pink;
+    cursor:pointer
+}
+
+.resumy{
+    transition:0.3s ease-in-out;
+}
+
+.resumy:hover{
+    cursor:pointer;
+    transition:0.3s ease-in-out;
+    border:2px solid black;
+    background-color: pink;
+    color:black;
+}

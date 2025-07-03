@@ -1,5 +1,6 @@
 import React, {useRef} from 'react'
 import {Link} from "react-scroll"
+import "./nav.css"
 const Nav = () => {
 
    const bar = useRef();
@@ -19,14 +20,14 @@ const Nav = () => {
    }
 
   return (
-    <div>
-      <div className='flex justify-between px-16 py-4 bg-black'>
+    <div className='fixed top-0 left-0 w-full'>
+      <div className=' flex justify-between px-16 py-4 bg-black'>
         <div className='mt-2'>
-             <h1 className='text-2xl font-bold text-white'>Aziz Ullah</h1>
+             <h1 className='text-3xl font-bold text-white'>Aziz Ullah</h1>
         </div>
         <div className='md:r-0 r-[-365px]'>
           
-         <div className='flex gap-4 items-center md:hidden block'>
+         <div className='flex gap-4 items-end justify-end md:hidden block mt-3'>
            <div className='md:hidden block cursor-pointer' ref={bar} onClick={show}>
           <i class="fa-solid fa-bars-staggered text-white text-2xl "></i>
           </div>
@@ -37,42 +38,26 @@ const Nav = () => {
            
         </div> 
         <div className='md:block hidden w-full' ref={list}>
-        <ul className='flex md:flex-row flex-col lg:gap-5 gap-3 justify-center items-start mt-2 text-white font-bold text-xl '>
-        <Link to="hero" smooth={true} duration={600} className="mr-4 cursor-pointer"><li >Home</li></Link>
-        <Link to="about" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>About</li></Link>
-        <Link to="train" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Training</li></Link>
-        <Link to="skill" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Skills</li></Link>
-        <Link to="service" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Services</li></Link>
-        <Link to="projecct" smooth={true} duration={600} className="mr-4 cursor-pointer"><li>Projects</li></Link>
+        <ul className='flex md:flex-row flex-col lg:gap-5 gap-3 justify-center items-end mt-4 text-white font-bold lg:text-xl text-md'>
+        <Link to="hero" smooth={true} duration={600} className="mr-4 cursor-pointer"><li className="navigate">Home</li></Link>
+        <Link to="about" smooth={true} duration={600} className="mr-4 cursor-pointer"><li className="navigate">About</li></Link>
+        <Link to="train" smooth={true} duration={600} className="mr-4 cursor-pointer"><li className="navigate">Training</li></Link>
+        <Link to="skill" smooth={true} duration={600} className="mr-4 cursor-pointer"><li className="navigate">Skills</li></Link>
+        <Link to="service" smooth={true} duration={600} className="mr-4 cursor-pointer"><li className="navigate">Services</li></Link>
+        <Link to="projecct" smooth={true} duration={600} className="mr-4 cursor-pointer"><li className="navigate">Projects</li></Link>
         </ul>
         </div>
            
         </div>
-        <Link to="contact" smooth={true} duration={500} className="mr-4 cursor-pointer">
+        <Link to="contact" smooth={true} duration={500} className="mr-4 cursor-pointer md:block hidden mt-1">
         <div className='md:block hidden'>
-            <button className=' border py-2 px-4 bg-blue-500 text-white rounded-full cursor-pointer'>Contact with me</button>
+            <button className=' border py-2 px-4 bg-blue-500 text-white rounded-full cursor-pointer btn'>Contact with me</button>
         </div>
         </Link>
 
       </div>
 
-      {/* <div className='flex flex-col py-8 px-5 gap-1 bg-black w-55 float-right hidden' ref={list}>
-
-      <div>
-            <ul className='flex flex-col gap-3 justify-center items-center mt-2 text-white font-bold'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Education</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div className='text-center pt-6'>
-            <button className=' border py-2 px-4 bg-blue-500 text-white rounded-md'>Contact with me</button>
-        </div>
-
-      </div> */}
+   
     </div>
   )
 }
