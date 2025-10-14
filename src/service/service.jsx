@@ -8,7 +8,7 @@ const Service = ({digit, title, explain}) => {
         <h3 className='text-xl text-white font-bold'>0{digit}</h3>
         <h1 className='text-2xl font-bold text-pink-500'>{title}</h1>
         <p className='text-white'>{explain}</p>
-        <Link to="/"><h2 className='bg-blue-500 p-2 rounded-md cursor-pointer w-30 '>Go Back</h2></Link>
+        <Link to="/" className="mr-4 cursor-pointer"><h2 className='bg-blue-500 p-2 rounded-md cursor-pointer w-30 '>Go Back</h2></Link>
       </div>
     </div>
   )

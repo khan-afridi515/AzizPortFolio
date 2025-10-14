@@ -49,7 +49,7 @@ const Project = () => {
   ]
 
   return (
-    <div className='bg-black py-16 px-16'>
+    <div className='w-full bg-black py-16 px-16'>
       <h1 className='text-3xl font-bold text-center pb-1 text-white'>Projects</h1>
       <p className='text-white text-center pb-10'>Click the photo to access the project</p>
       <h2 className='text-2xl font-bold text-yellow-200 py-5'>React Js Projects</h2>

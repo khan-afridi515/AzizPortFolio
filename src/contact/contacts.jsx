@@ -1,7 +1,41 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com'; 
 import "./contact.css";
 
+
+
 const Contacts = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) =>{
+     e.preventDefault();
+
+     emailjs
+     .sendForm(
+       'service_gihdgme',
+       'template_8ng52qa',
+        form.current,
+       'H4oqzQmLvTkqYswjq'
+
+     )
+     .then(
+      (result)=>{
+        alert("Message sent successfully!");
+        console.log(result.text);
+        e.target.reset;
+      },
+      (error)=>{
+        alert("Failed to sent message, please try again!");
+        console.log(error.text);
+      }
+     )
+  }
+
+  // service_id = service_gihdgme
+  // template_id = template_cbcrpuu
+  // public key = H4oqzQmLvTkqYswjq
+  
   return (
     <div className='bg-black py-16 px-16 w-full'>
         <h1 className='text-3xl text-white font-bold text-center mb-12'>Contact me</h1>
@@ -26,21 +60,25 @@ const Contacts = () => {
       </div>
 
       <div className='flex flex-col gap-4 md:w-[46%] w-[95%]'>
-          <div className='flex flex-col gap-1 w-full'>
+        <form ref={form} action=""  onSubmit={sendEmail} className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-1 w-full'>
             <label className='text-white'>Your name</label>
-            <input type="text"  className='w-full py-2 px-4 border border-white bg-gray-900 rounded-md outline-none text-white'></input>
+            <input type="text" name="name" className='w-full py-2 px-4 border border-white bg-gray-900 rounded-md outline-none text-white'></input>
           </div>
           <div className='flex flex-col gap-1 w-full'>
             <label className='text-white'>Your Email</label>
-            <input type="email" className='w-full py-2 px-4 border border-white bg-gray-900 rounded-md outline-none text-white'></input>
+            <input type="text" name="title" className='w-full py-2 px-4 border border-white bg-gray-900 rounded-md outline-none text-white'></input>
           </div>
           <div className='flex flex-col gap-1 w-full'>
           <label className='text-white'>Your message</label>
-          <textarea type="text" className='w-full h-30 rounded-md py-2 px-4 border border-white outline-none bg-gray-900 text-white'></textarea>
+          <textarea type="text" name="message" className='w-full h-30 rounded-md py-2 px-4 border border-white outline-none bg-gray-900 text-white'></textarea>
           </div>
           <div className='flex gap-1 w-full'>
-            <button className='px-4 py-1 bg-blue-500 text-xl cursor-pointer rounded-md sbmt'>Submit</button>
+            <button type="submit" className='px-4 py-1 bg-blue-500 text-xl cursor-pointer rounded-md sbmt'>Submit</button>
           </div>
+
+        </form>
+          
       </div>
 
     </div>

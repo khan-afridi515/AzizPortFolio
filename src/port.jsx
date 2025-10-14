@@ -11,15 +11,18 @@ import Contacts from './contact/contacts'
 
 const Port = ({sendItem}) => {
   return (
-    <div>
+    <div className='w-full'>
       <Nav/>
-      <section id="hero"><Hero/></section>
-      <section id="about"><AboutMe/></section>
-      <section id="train"><Train/></section>
-      <section id="skill"><Skill/></section>
-      <section id="service"><Services sendData={sendItem}/></section>
-      <section id="projecct"><Project/></section>
-      <section id="contact"><Contacts/></section>
+      <div className=''>
+      <section className="w-full" id="hero"><Hero/></section>
+      <section className="w-full" id="about"><AboutMe/></section>
+      <section className="w-full" id="train"><Train/></section>
+      <section className="w-full" id="skill"><Skill/></section>
+      <section className="w-full" id="service"><Services sendData={sendItem}/></section>
+      <section className="w-full" id="projecct"><Project/></section>
+      <section className="w-full" id="contact"><Contacts/></section>
+      </div>
+      
     </div>
   )
 }

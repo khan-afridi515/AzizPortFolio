@@ -9,7 +9,8 @@ const Skill = () => {
         { name: "React", level:  85},
         { name: "Tailwind", level: 90},
         { name: "Node.js", level: 65 },
-        { name: "Type Script", level: 70}
+        { name: "Express js", level: 70},
+        { name: "Mongo Db", level: 70}
       ];
 
   return (

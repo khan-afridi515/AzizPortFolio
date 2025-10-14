@@ -21,7 +21,7 @@ const Nav = () => {
 
   return (
     <div className='fixed top-0 left-0 w-full'>
-      <div className=' flex justify-between px-16 py-4 bg-black'>
+      <div className=' flex justify-between px-16 py-4 bg-black mx-auto'>
         <div className='mt-2'>
              <h1 className='text-3xl font-bold text-white'>Aziz Ullah</h1>
         </div>
