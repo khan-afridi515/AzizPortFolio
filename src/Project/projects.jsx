@@ -48,11 +48,19 @@ const Project = () => {
     }
   ]
 
+  const items3 = [
+    {
+      name : "Back End Project (POS)",
+      cover: "shots/backend.jpg",
+      github: "https://github.com/khan-afridi515/BackendRepo.git"
+    }
+  ]
+
   return (
     <div className='w-full bg-black py-16 px-16'>
       <h1 className='text-3xl font-bold text-center pb-1 text-white'>Projects</h1>
       <p className='text-white text-center pb-10'>Click the photo to access the project</p>
-      <h2 className='text-2xl font-bold text-yellow-200 py-5'>React Js Projects</h2>
+      <h2 className='text-2xl font-bold text-yellow-200 py-5'>React Js, Tailwind Css Projects</h2>
       <div className='flex flex-wrap justify-center items-center gap-8 '>
         
         {
@@ -72,6 +80,21 @@ const Project = () => {
         
         {
           items2.map((web)=>{
+            return(
+              <a href={web.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project2'>
+                <img className="w-full" src={web.cover}></img>
+                <h1 className='text-xl text-red-500 font-bold mt-1'>{web.name}</h1>
+              </div></a>
+            )
+          })
+        }
+      </div>
+
+      <h2 className='text-2xl font-bold text-yellow-200 pt-10 pb-5'>Node Js, Express Js, Mongo DB</h2>
+      <div className='flex flex-wrap justify-left items-center gap-8 '>
+        
+        {
+          items3.map((web)=>{
             return(
               <a href={web.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project2'>
                 <img className="w-full" src={web.cover}></img>
