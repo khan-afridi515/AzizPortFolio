@@ -5,11 +5,11 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <div className='flex flex-col py-50 px-8 justify-center items-center gap-6 bg-black w-full'>
+    <div className='flex flex-col py-50 px-10 justify-center items-center gap-6 bg-black w-full'>
       <div className='w-30'>
         <img src="images/crappedphoto.jpg" className='w-[100%] rounded-full'></img>
       </div>
-      <div className='sm:w-130 w-110'>
+      <div className='sm:w-130 w-80'>
         <h1 className='text-3xl font-bold text-white w-[100%] text-center'>I am Aziz Ullah, Mern-Stack Developer.</h1>
         
       </div>
