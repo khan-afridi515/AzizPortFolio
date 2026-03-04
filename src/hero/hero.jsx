@@ -10,7 +10,7 @@ const Hero = () => {
         <img src="images/crappedphoto.jpg" className='w-[100%] rounded-full'></img>
       </div>
       <div className='sm:w-130 w-110'>
-        <h1 className='text-3xl font-bold text-white w-[100%] text-center'>I am Aziz Ullah, Full-Stack Developer from Pakistan</h1>
+        <h1 className='text-3xl font-bold text-white w-[100%] text-center'>I am Aziz Ullah, Mern-Stack Developer.</h1>
         
       </div>
       <div className='sm:w-150 w-110'><p className='text-white md:w-[100%] w-[80%] text-center md:text-xl text-sm m-auto'>I am a Full-Stack developer, with one year of experience in javascript, TypeScript, React js, Redux along with node js, express js and mongo db.</p></div>
