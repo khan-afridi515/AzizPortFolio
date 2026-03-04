@@ -126,7 +126,7 @@ const Project = () => {
           {
             MernProject.map((project)=>{ 
               return(
-                <div className='sm:w-[32%] w-[98%] sm:h-78 h-128 flex flex-col sm:gap-4 gap-6 bg-gray-900 py-6 px-5 rounded-md border border-gray-500 project2'>
+                <div className='sm:w-[32%] w-[98%] sm:h-78 h-132 flex flex-col sm:gap-4 gap-6 bg-gray-900 py-6 px-5 rounded-md border border-gray-500 project2'>
                 <h2 className='text-xl text-white font-bold'>{project.name}</h2>
                 <p className='text-gray-400'>{project.description}</p>
                 <div className='flex sm:flex-row flex-col gap-3'>
