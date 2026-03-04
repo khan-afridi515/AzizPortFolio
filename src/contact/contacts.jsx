@@ -37,7 +37,7 @@ const Contacts = () => {
   // public key = H4oqzQmLvTkqYswjq
   
   return (
-    <div className='bg-black py-16 px-16 w-full'>
+    <div className='bg-black py-16 sm:px-16 px-8 w-full'>
         <h1 className='text-3xl text-white font-bold text-center mb-12'>Contact me</h1>
 
     <div className='flex md:flex-row flex-col md:justify-between md:gap-1 gap-15 justify-start w-full'>

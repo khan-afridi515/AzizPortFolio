@@ -86,7 +86,7 @@ const Project = () => {
   ]
 
   return (
-    <div className='w-full bg-black py-16 px-16'>
+    <div className='w-full bg-black py-16 sm:px-16 px-8'>
       <h1 className='text-3xl font-bold text-center pb-1 text-white'>Projects</h1>
       <p className='text-white text-center pb-10'>Click the photo to access the project</p>
       <h2 className='text-2xl font-bold text-yellow-200 py-5'>React Js, Tailwind Css Projects</h2>
@@ -126,11 +126,11 @@ const Project = () => {
           {
             MernProject.map((project)=>{ 
               return(
-                <div className='w-[32%] h-78 flex flex-col gap-4 bg-gray-900 py-6 px-5 rounded-md border border-gray-500 project2'>
+                <div className='sm:w-[32%] w-[98%] sm:h-78 h-125 flex flex-col sm:gap-4 gap-6 bg-gray-900 py-6 px-5 rounded-md border border-gray-500 project2'>
                 <h2 className='text-xl text-white font-bold'>{project.name}</h2>
                 <p className='text-gray-400'>{project.description}</p>
-                <div className='flex gap-3'>
-                  <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>React.js</p>
+                <div className='flex sm:flex-row flex-col gap-3'>
+                  <p className='py-1 self-left px-2 rounded-[3px] text-[14px] bg-pink-300'>React.js</p>
                   <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>Mongo db</p>
                   <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>Express.js</p>
                   <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>Node.js</p>

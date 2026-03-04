@@ -16,13 +16,13 @@ const Train = () => {
         }
     ]
   return (
-    <div className='px-16 py-16 bg-black w-full'>
+    <div className='sm:px-16 px-8 py-16 bg-black w-full'>
         <h1 className='text-center text-white text-3xl font-bold'>Training and Certification</h1>
       <div className='w-full flex md:flex-row md-justify-start justify-center items-center flex-col gap-8 my-8'>
           {
             element.map((item)=>{
                 return(
-                    <div className='p-4 bg-gray-600 rounded-md md:w-[50%] w-[90%] h-80 flex flex-col gap-3 text-white'>
+                    <div className='p-4 bg-gray-600 rounded-md md:w-[50%] w-[90%] sm:h-80 h-115 flex flex-col gap-3 text-white'>
                         <div className='flex flex-col w-full'>
                         <h3 className='font-bold'>Course Name  </h3>
                         <h3 className=''>{item.course}</h3>

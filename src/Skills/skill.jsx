@@ -15,7 +15,7 @@ const Skill = () => {
 
   return (
 
-    <div className="w-full p-4 py-10 px-16 bg-black">
+    <div className="w-full p-4 py-10 sm:px-16 px-8 bg-black">
         <h1 className='text-center text-white text-2xl font-bold'>My Skills</h1>
         <div className='py-8'>
         {skills.map((skill, index) => (
