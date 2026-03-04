@@ -2,11 +2,40 @@ import React from 'react'
 import "./project.css";
 const Project = () => {
 
+
+  const MernProject = [
+    {
+      name : "Social Media Integration Website",
+      description : "In this website a person can integrate facebook, instagram, linkedIn and youtube account, and can also post from this website to its all platform by one click.",
+      github1 : "https://github.com/khan-afridi515/social_media_integration.git",
+      github2 : "https://github.com/khan-afridi515/youtubeBackend.git"
+    },
+    {
+      name : "Course Registration System",
+      description : "This website is for education institute, in which students can register for courses, and can also see the details of courses, and can also see the details of teachers, here is also admin panel for admin to manage the courses , students and teachers.",
+      github1 : "https://github.com/khan-afridi515/Registration_Project.git",
+      github2 : "https://github.com/khan-afridi515/Registration_Project.git"
+    },
+    {
+      name : "Ecommerace website",
+      description : "This website is for online shopping, in which a person can buy products online, and can also see the details of products, and can also see the details of sellers, here is also admin panel for admin to manage the products, customers and sellers.",
+      github1 : "https://github.com/khan-afridi515/E-commerace-Front-End.git",
+      github2 : "https://github.com/khan-afridi515/E-Commerace-Back-end.git"
+    },
+    {
+      name : "Point of Sale System",
+      description : "This system is for retail stores admin panel, in which admin can manage the products, customers and orders, here is also a dashboard for admin to see the sales and revenue of the store.",
+      github1 : "https://github.com/khan-afridi515/PosSystem.git",
+      github2 : "https://github.com/khan-afridi515/BackendRepo.git"
+    }
+
+  ]
+
   const items = [
     {
-      name : "E-Commerace",
-      cover: "shots/watch.png",
-      github : "https://github.com/khan-afridi515/E-commerace-Front-End.git"
+      name : "Add2Gram",
+      cover: "shots/addTogram.png",
+      github : "https://github.com/khan-afridi515/Add2Gram.git"
     },
     {
       name : "Education website",
@@ -90,19 +119,41 @@ const Project = () => {
         }
       </div>
 
-      <h2 className='text-2xl font-bold text-yellow-200 pt-10 pb-5'>Node Js, Express Js, Mongo DB</h2>
-      <div className='flex flex-wrap justify-left items-center gap-8 '>
-        
-        {
-          items3.map((web)=>{
-            return(
-              <a href={web.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project2'>
-                <img className="w-full" src={web.cover}></img>
-                <h1 className='text-xl text-red-500 font-bold mt-1'>{web.name}</h1>
-              </div></a>
-            )
-          })
-        }
+      
+
+      <h2 className='text-2xl font-bold text-yellow-200 pt-10 pb-5'>Mern Stack Projects</h2>
+      <div className='w-full  flex gap-5 flex-wrap'>
+          {
+            MernProject.map((project)=>{ 
+              return(
+                <div className='w-[32%] h-75 flex flex-col gap-4 bg-gray-900 py-6 px-5 rounded-md border border-gray-500 project2'>
+                <h2 className='text-xl text-white font-bold'>{project.name}</h2>
+                <p className='text-gray-400'>{project.description}</p>
+                <div className='flex gap-3'>
+                  <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>React.js</p>
+                  <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>Mongo db</p>
+                  <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>Express.js</p>
+                  <p className='py-1 px-2 rounded-[3px] text-[14px] bg-pink-300'>Node.js</p>
+                </div>
+    
+                <div className='flex gap-5 pt-2'>
+                  <div className='flex gap-2'>
+                  <i className="fa-brands fa-github text-xl pt-0.5"></i>
+                  <a href={project.github1}><h3 className='text-gray-500 text-[16px] '>Front End</h3></a>
+                  </div>
+                  <div className='flex gap-2'>
+                  <i className="fa-brands fa-github text-xl pt-0.5"></i>
+                  <a href={project.github2}><h3 className='text-gray-500 text-[16px] '>Back End</h3></a>
+                  
+                  </div>
+                </div>
+    
+              </div>
+              )
+            })
+          }
+          
+
       </div>
 
     </div>
