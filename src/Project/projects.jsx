@@ -90,12 +90,12 @@ const Project = () => {
       <h1 className='text-3xl font-bold text-center pb-1 text-white'>Projects</h1>
       <p className='text-white text-center pb-10'>Click the photo to access the project</p>
       <h2 className='text-2xl font-bold text-yellow-200 py-5'>React Js, Tailwind Css Projects</h2>
-      <div className='flex flex-wrap justify-center items-center gap-8 '>
+      <div className='flex flex-wrap justify-center items-center gap-6 '>
         
         {
           items.map((app)=>{
             return(
-              <a href={app.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project1'>
+              <a href={app.github} className='md:w-[21%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project1'>
                 <img className="w-full" src={app.cover}></img>
                 <h1 className='text-xl text-red-500 font-bold mt-1'>{app.name}</h1>
               </div></a>
@@ -105,12 +105,12 @@ const Project = () => {
       </div>
 
       <h2 className='text-2xl font-bold text-yellow-200 pt-10 pb-5'> HTML CSS Javascript</h2>
-      <div className='flex flex-wrap justify-center items-center gap-8 '>
+      <div className='flex flex-wrap justify-center items-center gap-6 '>
         
         {
           items2.map((web)=>{
             return(
-              <a href={web.github} className='md:w-[23%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project2'>
+              <a href={web.github} className='md:w-[21%] sm:w-[47%] w-[95%]'><div className='w-full cursor-pointer project2'>
                 <img className="w-full" src={web.cover}></img>
                 <h1 className='text-xl text-red-500 font-bold mt-1'>{web.name}</h1>
               </div></a>
@@ -126,7 +126,7 @@ const Project = () => {
           {
             MernProject.map((project)=>{ 
               return(
-                <div className='w-[32%] h-75 flex flex-col gap-4 bg-gray-900 py-6 px-5 rounded-md border border-gray-500 project2'>
+                <div className='w-[32%] h-78 flex flex-col gap-4 bg-gray-900 py-6 px-5 rounded-md border border-gray-500 project2'>
                 <h2 className='text-xl text-white font-bold'>{project.name}</h2>
                 <p className='text-gray-400'>{project.description}</p>
                 <div className='flex gap-3'>
