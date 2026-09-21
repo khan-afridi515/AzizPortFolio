@@ -12,7 +12,7 @@ const App = () => {
   const [detail, setDetail]=useState();
 
   const sendDetails = (work, number) =>{
-    console.log("This is the details",work.name, work.details);
+
      setSNumber(number+1);
      setName(work.name);
      setDetail(work.details);
